@@ -2,8 +2,8 @@ class ApplicationController < Sinatra::Base
 set :defaiult_content_type, "application/json"
   # add routes
   get "/bakeries" do 
-    bekaries = Bakery.all
-    bekaries.to_json
+    bakeries = Bakery.all
+    bakeries.to_json
   end
 
   get "/bakeries/:id" do
